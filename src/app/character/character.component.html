@@ -1,0 +1,37 @@
+<h2>Choose your character</h2>
+<div *ngFor="let player of players | async" (click)="goToLevelPage(player)" class="panel panel-default">
+  <div class="panel-body">
+    <h4>{{player.name}}</h4>
+    <p>Species: {{player.species}}</p>
+    <p>Age: {{player.age}}</p>
+    <p>Points: {{player.points}}</p>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Create your own player</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>Player name:</label>
+        <br>
+        <input #newName>
+      </div>
+
+      <div>
+        <label>Player species:</label>
+        <br>
+        <input #newSpecies>
+      </div>
+
+      <div>
+        <label>Player age:</label>
+        <br>
+        <input #newAge>
+      </div>
+         <button (click)="submitForm(newName.value, newSpecies.value, newAge.value); newName.value=''; newSpecies.value=''; newAge.value=''">Add me</button>
+    </div>
+  </div>
+</div>

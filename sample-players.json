@@ -1,0 +1,26 @@
+{ "players": [{
+  "name": "Teddy Roosevelt",
+  "species": "human",
+  "age": "49",
+  "id": "1",
+  "points": "100"
+}, {
+  "name": "Barney",
+  "species": "dinosaur",
+  "age": "1400",
+  "id": "2",
+  "points": "100"
+}, {
+  "name": "Robin Hood",
+  "species": "fox",
+  "age": "17",
+  "id": "3",
+  "points": "100"
+}, {
+  "name": "Starfox",
+  "species": "fox",
+  "age": "26",
+  "id": "4",
+  "points": "100"
+  }]
+}
